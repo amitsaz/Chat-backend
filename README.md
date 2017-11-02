@@ -8,7 +8,7 @@ A chat backend API that allows sending messages and retrieving messages between 
  To get the project up and running:
 
 1. Install Docker https://docs.docker.com/engine/installation/
-2. In a terminal, go to the directory challenge-eng-base-master
+2. In a terminal, go to the directory chatAPI
 3. docker-compose.yml file is configured to run Java backend project.
 4. To start, run the following:
 1. docker-compose up backend
