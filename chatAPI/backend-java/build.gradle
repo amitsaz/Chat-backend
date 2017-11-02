@@ -1,0 +1,31 @@
+apply plugin: 'application'
+
+mainClassName = 'com.chat.config.Challenge'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'io.dropwizard:dropwizard-core:1.1.0'
+    compile 'io.dropwizard:dropwizard-jdbi:1.1.0'
+    compile 'mysql:mysql-connector-java:6.0.6'
+    testCompile 'junit:junit:4.12'
+    // https://mvnrepository.com/artifact/io.dropwizard/dropwizard-testing
+    testCompile group: 'io.dropwizard', name: 'dropwizard-testing', version: '1.1.0'
+    // https://mvnrepository.com/artifact/org.mockito/mockito-core
+    testCompile group: 'org.mockito', name: 'mockito-core', version: '1.9.5'
+    // https://mvnrepository.com/artifact/io.dropwizard/dropwizard-client
+    testCompile group: 'io.dropwizard', name: 'dropwizard-client', version: '1.1.0'
+    // https://mvnrepository.com/artifact/io.federecio/dropwizard-swagger
+    // https://mvnrepository.com/artifact/com.smoketurner/dropwizard-swagger
+    compile group: 'com.smoketurner', name: 'dropwizard-swagger', version: '1.1.1-1'
+
+
+
+
+}
+
+run {
+    args "server", "app.yaml"
+}

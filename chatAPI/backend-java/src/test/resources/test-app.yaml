@@ -1,0 +1,14 @@
+server:
+  applicationConnectors:
+    - type: http
+      port: 8001
+
+database:
+  driverClass: com.mysql.cj.jdbc.Driver
+  user: root
+  password: root
+  url: jdbc:mysql://localhost:3306/challenge?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+  properties:
+    useSSL: false
+swagger:
+    resourcePackage: com.chat.controller
